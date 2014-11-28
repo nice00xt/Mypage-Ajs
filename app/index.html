@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="Juan - Front End">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/global.less">
+    <link rel="stylesheet" href="styles/font-awesome.min.css" >
+    <!-- endbuild -->
+  </head>
+  <body ng-app="apps">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+          
+            <!-- sidebar -->
+            <div class="column col-sm-4" id="sidebar">
+
+                <a class="logo" href="#">
+                  <img src="images/bg/user.png" alt="">
+                </a>
+                <div class="descrip">
+                    <p>Hi! I'm <span>Juan Guillermo</span> </p>
+                    <p>a Web Developer and Designer.</p>
+
+                </div>
+                <ul class="nav">
+                    <li class="active"><a href="#featured"></a></li>
+                </ul>
+
+                <div id="sidebar-footer">
+                    <ul>
+                        <li><a id="lin" href="https://www.linkedin.com/profile/view?id=212310303&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a id="twt" href="https://twitter.com/juan00xt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a id="gl" href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a id="gt" href="https://github.com/nice00xt" target="_blank"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- /column -->
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column col-sm-8" id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                        <div class="row"> 
+
+                          <div class="col-sm-12">
+                                <div id="title">
+                                <h2>About me</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis debitis, eligendi quo atque esse ducimus nobis possimus illum molestias consequatur delectus voluptates, autem quos eum id est neque, sit vel.</p>
+                                </div>
+                                <hr>
+
+                                <h3>My Skills</h3>
+
+                                <div class="skills" ng-controller="skillList1">
+
+                                     <!-- skills1-->
+                                    <div class="pro" ng-repeat="sk in skills">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    <!-- skills2-->
+                                    <div class="pro" ng-repeat="sk in skills2">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    <!-- skills3-->
+                                    <div class="pro" ng-repeat="sk in skills3">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </div><!-- end skills controller-->
+                                
+                                <hr>
+
+                                <h3>Latest Works</h3>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>Bitacora-Territorio.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work1.jpg" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>SmileHD.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>SmileHD.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>SmileHD.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>SmileHD.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box-portfolio">
+                                        <div class="ps">
+                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
+                                        </div>
+                                            <div class="box-descrip">
+                                                <h4>SmileHD.com</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
+                                        </div>
+                                        <div class="back-sw"></div>                                       
+                                        <img src="images/misc/work6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+
+                              <hr>
+
+                              <h3>Articles</h3>
+                              <div class="article">
+
+                              </div>
+                              <hr>
+
+
+
+                          </div>
+
+                        
+                    </div><!-- /row -->
+
+                     </div><!-- /col-9 -->
+                </div><!-- /padding -->
+            </div><!-- /column2 -->
+            <!-- /main -->
+          
+        </div><!-- /row -->
+    </div><!-- /box -->
+</div><!-- /wrapper -->
+
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/skills.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

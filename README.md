@@ -1,0 +1,4 @@
+Mypage-Ajs
+==========
+
+owner page

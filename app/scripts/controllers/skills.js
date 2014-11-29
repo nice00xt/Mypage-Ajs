@@ -1,4 +1,12 @@
-	//angular code
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name apps.controller:skillList1
+ * @description
+ * # skillList1
+ * Controller of the apps
+ */
 	var AppStart = angular.module('apps', [])
     
     AppStart.controller( 'skillList1', ['$scope', function($scope){

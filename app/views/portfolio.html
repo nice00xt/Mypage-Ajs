@@ -1,82 +1,19 @@
-<div class="portfolio">
+<div>
+<div class="portfolio" ng-controller="portfolio">
     <h3>Latest Works</h3>
-                                <div class="col-md-6">
+
+
+                                <div class="col-md-6" ng-repeat="prt in portlist">
                                     <div class="box-portfolio">
                                         <div class="ps">
                                             <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
                                         </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
+                                             <div class="box-descrip">
+                                                    <h4>{{prt.title}}</h4>
+                                                    <p>{{prt.descrip}}</p>
+                                            </div>
                                         <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work1.jpg" alt="">
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="box-portfolio">
-                                        <div class="ps">
-                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
-                                        </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
-                                        <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="box-portfolio">
-                                        <div class="ps">
-                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
-                                        </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
-                                        <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="box-portfolio">
-                                        <div class="ps">
-                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
-                                        </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
-                                        <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work4.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="box-portfolio">
-                                        <div class="ps">
-                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
-                                        </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
-                                        <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work5.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="box-portfolio">
-                                        <div class="ps">
-                                            <div class="lp"><a href="#"><i class="fa fa-search-plus"></i></a></div>
-                                        </div>
-                                            <div class="box-descrip">
-                                                <h4>project</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu</p>
-                                        </div>
-                                        <div class="back-sw"></div>                                       
-                                        <img src="images/misc/work6.jpg" alt="">
+                                        <img src="images/misc/{{prt.img}}" alt="">
                                     </div>
                                 </div>
             </div>

@@ -8,10 +8,9 @@
  * Controller of the apps
  */
 
-/**
-var AppStart = angular.module( 'apps' , ['ngRoute'] ) 
+var portapp = angular.module( 'apps' , ['ngRoute'] )
           
-AppStart.config(['$routeProvider',
+portapp.config(['$routeProvider',
    function($routeProvider) {
         $routeProvider.
            when('/skills', {
@@ -25,4 +24,3 @@ AppStart.config(['$routeProvider',
               templateUrl: 'views/start.html',
          });
     }]);
-*/

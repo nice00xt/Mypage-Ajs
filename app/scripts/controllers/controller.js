@@ -46,12 +46,12 @@
         AppStart.controller( 'portfolio', ['$scope', function($scope){
 
        $scope.portlist = [
-            { title: "project", img: "work1.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
-            { title: "project", img: "work2.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
-            { title: "project", img: "work3.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
-            { title: "project", img: "work4.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
-            { title: "project", img: "work5.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
-            { title: "project", img: "work6.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_1", title: "project1", img: "work1.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_2", title: "project2", img: "work2.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_3", title: "project3", img: "work3.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_4", title: "project4", img: "work4.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_5", title: "project5", img: "work5.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
+            { id: "project_6", title: "project6", img: "work6.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" }
 
         ]
 
@@ -66,9 +66,18 @@
                 $routeProvider.
                   when('/portfolio', {
                     templateUrl: 'views/port-view.html',
+
                   }).
                   otherwise({
                     redirectTo: '/',
                       templateUrl: 'views/start.html',
                   });
               }]);
+
+/*
+AppStart.controller('portfolio', ['$scope', '$http', function($scope, $http) {
+  $http.get('apps/portfolio_list.json').success(function(data) {
+    $scope.portfolio = data;
+  });
+
+}]);         */

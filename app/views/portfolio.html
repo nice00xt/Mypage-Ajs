@@ -6,14 +6,15 @@
                                 <div class="col-md-6" ng-repeat="prt in portlist">
                                     <div class="box-portfolio">
                                         <div class="ps">
-                                            <div class="lp"><a href="#/portfolio"><i class="fa fa-search-plus"></i></a></div>
+                                            <div class="lp"><a href="#/portfolio/{{ prt.id }}"><i class="fa fa-search-plus"></i></a></div>
                                         </div>
                                              <div class="box-descrip">
                                                     <h4>{{prt.title}}</h4>
+                                                    <p>{{ prt.id }}</p>
                                                     <p>{{prt.descrip}}</p>
                                             </div>
                                         <div class="back-sw"></div>                                       
-                                        <img src="images/misc/{{prt.img}}" alt="">
+                                        <img ng-src="images/misc/{{prt.img}}" alt="">
                                     </div>
                                 </div>
             </div>

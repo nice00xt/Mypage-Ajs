@@ -8,7 +8,7 @@
  * Controller of the apps
  */
 
-  var AppStart = angular.module('apps', [])
+  var AppStart = angular.module('apps', ['ngRoute'])
     
     AppStart.controller( 'skillList1', ['$scope', function($scope){
 
@@ -56,3 +56,19 @@
         ]
 
     }] )
+
+
+
+          
+          
+         AppStart.config(['$routeProvider',
+              function($routeProvider) {
+                $routeProvider.
+                  when('/portfolio', {
+                    templateUrl: 'views/port-view.html',
+                  }).
+                  otherwise({
+                    redirectTo: '/',
+                      templateUrl: 'views/start.html',
+                  });
+              }]);

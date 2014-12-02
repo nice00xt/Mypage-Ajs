@@ -8,6 +8,7 @@
  * Controller of the apps
  */
 
+/**
 var portapp = angular.module( 'apps' , ['ngRoute'] )
           
 portapp.config(['$routeProvider',
@@ -24,3 +25,4 @@ portapp.config(['$routeProvider',
               templateUrl: 'views/start.html',
          });
     }]);
+*/

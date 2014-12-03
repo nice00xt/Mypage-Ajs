@@ -35,7 +35,6 @@
         $scope.skills3 = [
             { skill: "Bower", perct: "30" },
             { skill: "GruntJS", perct: "50" },
-            { skill: "Yeoman", perct: "50" },
             { skill: "GitHub", perct: "50" }
 
 

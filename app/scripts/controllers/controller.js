@@ -8,6 +8,8 @@
  * Controller of the apps
  */
 
+
+  
   var AppStart = angular.module('apps', ['ngRoute'])
     
     AppStart.controller( 'skillList1', ['$scope', function($scope){
@@ -42,7 +44,9 @@
 
     }] )
 
-     AppStart.controller( 'portfolio', ['$scope', function($scope){
+
+/*
+     AppStart.controller( 'portfolio-controller', ['$scope', function($scope){
 
        $scope.portlist = [
             { id: "project_1", title: "project1", img: "work1.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
@@ -55,19 +59,25 @@
         ]
 
     }] )
-     
-         AppStart.config(['$routeProvider',
-              function($routeProvider) {
+   */
+
+
+         AppStart.config(['$routeProvider', function($routeProvider) {
                 $routeProvider.
                   when('/:id', {
                     templateUrl: 'views/port-view.html',
-                    controller: 'portfolio'
+                    controller: 'portfolio-controller'
 
                   }).
                   otherwise({
                     redirectTo: '/',
                       templateUrl: 'views/start.html',
-                      controller: 'portfolio'
+                      controller: 'portfolioDetails'
                   });
               }]);
 
+            AppStart.controller('portfolio-controller', function ($scope, $http){
+              $http.get('app/portfolio.json').success(function(data) {
+                $scope.portlist = data; 
+              });
+            });

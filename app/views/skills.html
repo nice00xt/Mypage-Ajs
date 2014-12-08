@@ -1,5 +1,5 @@
                                 <div class="skills" ng-controller="skillList1">
-                         
+                        
                                     <h3>My Skills 123</h3>
                                      <!-- skills1-->
                                     <div class="pro" ng-repeat="sk in skills">
@@ -23,4 +23,20 @@
                                         <div class="br" style="width:{{sk.perct}}%;"></div>
                                     </div>
 
+                                    <style>
+                                    .br {
+                                    -webkit-animation: brs 0.8s; 
+                                    animation: brs 0.8s;
+                                    animation-fill-mode:forwards;
+                                    -webkit-animation-fill-mode: forwards;
+                                    }
+                                    @-webkit-keyframes brs {
+                                        from {width: 100%;}
+                                        to {width: {{sk.perct}};}
+                                    }
+                                    @keyframes brs {
+                                        from {width: 100%;}
+                                        to {width: {{sk.perct}};}
+                                    }
+                                    </style>
                                 </div><!-- end skills controller-->

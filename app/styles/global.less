@@ -100,7 +100,7 @@ a {
 #sidebar, #sidebar a {
     color:#ffffff;
     background-color:transparent;
-    text-shadow:1px 0 1px #888888;
+    /*text-shadow:1px 0 1px #888888;*/
 }
 
 #sidebar .logo img{
@@ -270,15 +270,19 @@ small.text-muted {
 
 
 .br{
-  width: 50%;
   height: 100%;
   position: absolute;
   background-color: @l-teal;
   z-index: 1;
   top: 0;
   right: 0;
-
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
+
+
+
+
 /*portfolio
    ======================================= */
 .box-portfolio{
@@ -333,7 +337,7 @@ small.text-muted {
   padding: 0px 20px 10px;
   text-align: left;
   margin-top: 36px;
-  background-color: transparent;
+  background-color: @d-blue;
   top: 56px;
     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;

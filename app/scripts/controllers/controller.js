@@ -45,8 +45,8 @@
     }] )
 
 
-/*
-     AppStart.controller( 'portfolio-controller', ['$scope', function($scope){
+
+     AppStart.controller( 'PortfolioController', ['$scope', function($scope){
 
        $scope.portlist = [
             { id: "project_1", title: "project1", img: "work1.jpg", descrip: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu" },
@@ -59,25 +59,39 @@
         ]
 
     }] )
-   */
+   
 
+
+   
+            
 
          AppStart.config(['$routeProvider', function($routeProvider) {
                 $routeProvider.
+                when('/portfolio', {
+                    templateUrl: 'views/portfolio.html',
+                    controller: 'PortfolioController'
+
+                  }).
+                  when('/skills', {
+                      templateUrl: 'views/skills.html',
+
+                    }).
                   when('/:id', {
                     templateUrl: 'views/port-view.html',
-                    controller: 'portfolio-controller'
+                    controller: 'PortfolioController'
 
                   }).
                   otherwise({
                     redirectTo: '/',
                       templateUrl: 'views/start.html',
-                      controller: 'portfolioDetails'
                   });
               }]);
-
-            AppStart.controller('portfolio-controller', function ($scope, $http){
-              $http.get('app/portfolio.json').success(function(data) {
+/*
+              AppStart.controller('PortfolioController', function ($scope, $http){
+              $http.get('data/portfolio.json').success(function(data) {
                 $scope.portlist = data; 
               });
             });
+            
+
+*/

@@ -1,0 +1,17 @@
+
+        [
+            { "skill": "Bootstrap 3", 
+              "perct": "30" 
+              },
+            { "skill": "Wordpress", 
+              "perct": "15" 
+              },
+            { "skill": "SEO", 
+              "perct": "40" 
+              },
+            { "skill": "User Experience", 
+              "perct": "20" 
+          }
+
+        ]
+

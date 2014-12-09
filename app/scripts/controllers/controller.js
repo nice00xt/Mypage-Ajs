@@ -12,8 +12,30 @@
   
 var AppStart = angular.module('apps', ['ngRoute'])
 
-        AppStart.controller('skillList', function ($scope, $http){
+AppStart.config(['$routeProvider', function($routeProvider) {
+                $routeProvider.
+                when('/portfolio', {
+                    templateUrl: 'views/portfolio.html',
+                    controller: 'PortfolioController'
 
+                  }).
+                  when('/skills', {
+                      templateUrl: 'views/skills.html',
+
+                    }).
+                  when('/:details', {
+                    templateUrl: 'views/port-view.html',
+                    controller: 'PortfolioDetails'
+
+                  }).
+                  otherwise({
+                    redirectTo: '/',
+                      templateUrl: 'views/start.html',
+                  });
+              }]);
+
+
+        AppStart.controller('skillList', function ($scope, $http){
               $http.get('data/skill.json').success(function(data) {
                 $scope.skills = data; 
               });
@@ -31,29 +53,26 @@ var AppStart = angular.module('apps', ['ngRoute'])
                 $scope.portlist = data; 
               });
             });
+        
+        AppStart.controller('PortfolioDetails', function ($scope, $routeParams, $http){
+        $scope.title = $routeParams.details;
 
-        AppStart.config(['$routeProvider', function($routeProvider) {
-                $routeProvider.
-                when('/portfolio', {
-                    templateUrl: 'views/portfolio.html',
-                    controller: 'PortfolioController'
+       $http.get('data/portfolio.json').success(function(data) {
+          $scope.prt = data.filter(function(entry){
+            return entry.title === $scope.title;
+          })[0];
+        });
 
-                  }).
-                  when('/skills', {
-                      templateUrl: 'views/skills.html',
+      });
+             
+/*
+      AppStart.controller('PortfolioDetails', function ($scope, $routeParams){
+        $scope.title = $routeParams.details;
 
-                    }).
-                  when('/:id', {
-                    templateUrl: 'views/port-view.html',
-                    controller: 'PortfolioController'
 
-                  }).
-                  otherwise({
-                    redirectTo: '/',
-                      templateUrl: 'views/start.html',
-                  });
-              }]);
+      });
+    */
+      
 
-              
-            
-
+       
+           

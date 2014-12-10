@@ -403,14 +403,20 @@ small.text-muted {
 
 /* ng-animate 
    ======================================= */
-.ng-enter     { z-index: 8888; }
-.ng-leave     { z-index: 9999; }
+.ng-enter { 
+  position: absolute;
+  z-index: 8888; 
+}
+.ng-leave{
+  position: absolute;
+ z-index: 9999; 
+}
 
 .ng-enter{ 
-  animation: fadeInRight  0.5s ease-in; z-index: 8888; 
+  animation: fadeIn  0.5s ease-in; z-index: 8888; 
 }
 .ng-leave{ 
-  animation: fadeOutLeft  0.5s ease-in; z-index: 9999;
+  animation: fadeOut  0.5s ease-in; z-index: 9999;
 
 
 }

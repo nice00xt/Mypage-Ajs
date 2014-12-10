@@ -23,7 +23,7 @@ AppStart.config(['$routeProvider', function($routeProvider) {
                       templateUrl: 'views/skills.html',
 
                     }).
-                  when('/:details', {
+                  when('/portfolio/:details', {
                     templateUrl: 'views/port-view.html',
                     controller: 'PortfolioDetails'
 
@@ -34,7 +34,7 @@ AppStart.config(['$routeProvider', function($routeProvider) {
                   });
               }]);
 
-
+//skills json file
         AppStart.controller('skillList', function ($scope, $http){
               $http.get('data/skill.json').success(function(data) {
                 $scope.skills = data; 
@@ -47,32 +47,26 @@ AppStart.config(['$routeProvider', function($routeProvider) {
               });
             });
 
-
+//portolio json file
         AppStart.controller('PortfolioController', function ($scope, $http){
               $http.get('data/portfolio.json').success(function(data) {
                 $scope.portlist = data; 
               });
             });
-        
+
+//link
         AppStart.controller('PortfolioDetails', function ($scope, $routeParams, $http){
         $scope.title = $routeParams.details;
 
+
        $http.get('data/portfolio.json').success(function(data) {
           $scope.prt = data.filter(function(entry){
-            return entry.title === $scope.title;
+            return entry.title === $scope.details;
           })[0];
         });
 
       });
-             
-/*
-      AppStart.controller('PortfolioDetails', function ($scope, $routeParams){
-        $scope.title = $routeParams.details;
 
-
-      });
-    */
-      
 
        
            

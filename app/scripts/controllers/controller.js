@@ -71,11 +71,11 @@ AppStart.config(['$routeProvider', function($routeProvider) {
 
 
        $http.get('data/portfolio.json').success(function(data) {
-          $scope.prt = data.filter(function(entry){
-            return entry.title === $scope.details;
+
+       $scope.prt = data.filter(function(entry){
+            return entry.title === $scope.title;
           })[0];
         });
-
       });
 
 

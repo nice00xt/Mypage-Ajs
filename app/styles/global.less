@@ -7,6 +7,7 @@
 
    @teal: #009688;
    @l-teal: #4DB6AC;
+   @shadow: rgba(0, 0, 0, 0.13);
 
 /* ==========================================================================
 styles
@@ -56,7 +57,7 @@ a {
 
 .column {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     *zoom:1;
 }
 
@@ -94,7 +95,7 @@ a {
   padding-top: 100px;
   text-align: right;
   padding-right: 60px;
-  border-right: 8px solid @d-blue;
+  border-right: 8px solid @shadow;
 }
 
 #sidebar, #sidebar a {
@@ -107,6 +108,12 @@ a {
     width: 120px;
     border-radius: 100%;
     margin-bottom: 20px;
+}
+
+.descrip{
+  position: relative;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
 .descrip span{
@@ -403,20 +410,22 @@ small.text-muted {
 
 /* ng-animate 
    ======================================= */
-.ng-enter { 
-  position: absolute;
-  z-index: 8888; 
-}
-.ng-leave{
-  position: absolute;
- z-index: 9999; 
-}
+.ng-enter, .ng-leave{position: absolute;}
+.ng-enter { z-index: 8888; }
+.ng-leave{ z-index: 9999; }
 
 .ng-enter{ 
-  animation: fadeIn  0.5s ease-in; z-index: 8888; 
+  animation: fadeInUp  0.2s linear; z-index: 8888; 
 }
 .ng-leave{ 
-  animation: fadeOut  0.5s ease-in; z-index: 9999;
+  animation: zoomOut  0.3s linear; z-index: 9999;
 
 
 }
+
+/* porfolio details 
+   ======================================= */
+
+   .portfolio-details img{
+      width: 100%;
+   }

@@ -56,7 +56,7 @@ a {
 
 .column {
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     *zoom:1;
 }
 
@@ -280,9 +280,6 @@ small.text-muted {
   -webkit-transition: all 0.3s ease;
 }
 
-
-
-
 /*portfolio
    ======================================= */
 .box-portfolio{
@@ -404,3 +401,16 @@ small.text-muted {
  }
 }
 
+/* ng-animate 
+   ======================================= */
+.ng-enter     { z-index: 8888; }
+.ng-leave     { z-index: 9999; }
+
+.ng-enter{ 
+  animation: fadeInRight  0.5s ease-in; z-index: 8888; 
+}
+.ng-leave{ 
+  animation: fadeOutLeft  0.5s ease-in; z-index: 9999;
+
+
+}

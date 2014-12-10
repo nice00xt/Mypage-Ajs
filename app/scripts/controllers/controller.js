@@ -10,7 +10,7 @@
 
 
   
-var AppStart = angular.module('apps', ['ngRoute'])
+var AppStart = angular.module('apps', ['ngRoute', 'ngAnimate'])
 
 AppStart.config(['$routeProvider', function($routeProvider) {
                 $routeProvider.
@@ -21,6 +21,7 @@ AppStart.config(['$routeProvider', function($routeProvider) {
                   }).
                   when('/skills', {
                       templateUrl: 'views/skills.html',
+                      controller: 'skillList'
 
                     }).
                   when('/portfolio/:details', {
@@ -33,6 +34,16 @@ AppStart.config(['$routeProvider', function($routeProvider) {
                       templateUrl: 'views/start.html',
                   });
               }]);
+
+//animate views ===================================================
+        AppStart.controller('PortfolioController', function($scope) {
+            $scope.pageClass = 'page-porfolio';
+        });
+
+        AppStart.controller('skillList', function($scope) {
+            $scope.pageClass = 'page-skills';
+        });
+
 
 //skills json file
         AppStart.controller('skillList', function ($scope, $http){

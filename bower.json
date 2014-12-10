@@ -1,25 +1,18 @@
 {
-  "name": "Juan CV",
-  "version": "1.0",
+  "name": "Juan Cv",
+  "version": "1.0.0",
   "dependencies": {
+    "angular": "^1.3.0",
+    "json3": "^3.3.0",
+    "es5-shim": "^4.0.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.3.0",
+    "angular-route": "^1.3.0",
     "animate.css": "~3.2.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0",
     "angular-scenario": "~1.3.0"
   },
-  "appPath": "app",
-  "homepage": "https://github.com/nice00xt/Mypage-Ajs",
-  "authors": [
-    "juan <juan00xt@g",
-    "ail.com>"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "appPath": "app"
 }

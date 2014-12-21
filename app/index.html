@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/global.less">
     <link rel="stylesheet" href="styles/font-awesome.min.css" >
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,300,700' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body ng-app="apps">
@@ -62,7 +63,6 @@
           
             <!-- main -->
             <div class="column col-sm-8" id="main">
-                <div class="padding">
                     <div class="full col-sm-9">
                         <div class="row"> 
                           <div class="col-sm-12">
@@ -81,9 +81,14 @@
                            </div><!-- /col-12 -->
                         </div><!-- /row -->
                     </div><!-- /col-9 -->
-                </div><!-- /padding -->
             </div><!-- /main -->
-            
+
+            <div class="overlay-box">
+                <div class="container">
+                    <h2>overlay box</h2>
+                    <p>Descript</p>
+                </div>
+            </div>
           
         </div><!-- /row -->
     </div><!-- /box -->
@@ -109,6 +114,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/controllers/controller.js"></script>
+    <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>

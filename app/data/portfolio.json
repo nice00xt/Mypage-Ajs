@@ -1,37 +1,43 @@
 [
   {
-	 "title": "Bitacora Territorio",
-	 "img": "work1.jpg",
-	 "port-logo": "",
-	 "descrip": "description primero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+	"title": "Bitacora Territorio",
+	"img": "work1.jpg",
+	"link": "#",
+	"port-logo": "",
+	"descrip": "description primero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
 	"title": "project2",
 	"img": "work2.jpg",
+	"link": "#",
 	"port-logo": "",
 	"descrip": "descripcion segundo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
 	"title": "project3",
 	"img": "work3.jpg",
+	"link": "#",
 	"port-logo": "",
 	"descrip": "descripcion tercero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
 	"title": "project4",
 	"img": "work4.jpg",
+	"link": "#",
 	"port-logo": "", 
 	"descrip": "descripcion cuartLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
 	"title": "project5",
 	"img": "work5.jpg",
+	"link": "#",
 	"port-logo": "", 
 	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   { 
 	"title": "Constructora Infraestructura SAS", 
 	"img": "work6.jpg",
+	"link": "#",
 	"port-logo": "",
 	"descrip": "descripcion sexto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   }

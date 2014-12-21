@@ -38,6 +38,9 @@ a {
   color:#222222;
 }
 
+p{
+  font-family:'Raleway', sans-serif;
+}
 .wrapper, .row {
    height: 100%;
    margin-left:0;
@@ -95,7 +98,7 @@ a {
   padding-top: 100px;
   text-align: right;
   padding-right: 60px;
-  border-right: 8px solid @shadow;
+  border-right: 3px solid @shadow;
 }
 
 #sidebar, #sidebar a {
@@ -214,11 +217,12 @@ a {
 /* bootstrap overrides */
 
 h1,h2,h3 {
-   font-family:'Relaway',arial,sans-serif;
+   font-family:'Raleway', sans-serif;
    color: @d-blue;
 }
 
 #title p{
+
   color: @grey;
   font-size: 17px;
 }
@@ -403,11 +407,22 @@ small.text-muted {
 
 @media (max-width: 800px) {
 #sidebar{
-  border-bottom: 8px solid @d-blue !important;
+  border-bottom: 3px solid @d-blue !important;
   border-right: 0 !important;
  }
 }
-
+/* modal
+   ======================================= */
+   .overlay-box{
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: block;
+   }
 /* ng-animate 
    ======================================= */
 .ng-enter, .ng-leave{position: absolute;}
@@ -418,9 +433,7 @@ small.text-muted {
   animation: fadeInUp  0.2s linear; z-index: 8888; 
 }
 .ng-leave{ 
-  animation: zoomOut  0.3s linear; z-index: 9999;
-
-
+  animation: zoomOut  0.5s linear; z-index: 9999;
 }
 
 /* porfolio details 

@@ -5,6 +5,9 @@
             { "skill": "Css3", 
               "perct": "10"
               },
+            { "skill": "Responsive Design", 
+              "perct": "30" 
+              },
             { "skill": "Jquery",
               "perct": "20" 
               },
@@ -19,10 +22,8 @@
               },
             { "skill": "php", 
               "perct": "40" 
-              },
-            { "skill": "Responsive Design", 
-              "perct": "30" 
-            }
+              }
+            
 
 
 ]

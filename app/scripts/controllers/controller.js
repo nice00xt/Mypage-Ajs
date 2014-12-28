@@ -65,7 +65,7 @@ AppStart.config(['$routeProvider', function($routeProvider) {
               });
             });
 
-//link
+//route
         AppStart.controller('PortfolioDetails', function ($scope, $routeParams, $http){
         $scope.title = $routeParams.details;
 

@@ -2,8 +2,9 @@
   {
 	"title": "Bitacora Territorio",
 	"img": "work1.jpg",
-	"link": "#",
+	"link": "http://bitacora-territorio.com/",
 	"port-logo": "",
+	"skill": "Wordpress HTML5 CSS3",
 	"descrip": "description primero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
@@ -11,6 +12,7 @@
 	"img": "work2.jpg",
 	"link": "#",
 	"port-logo": "",
+	"skill": "Wordpress HTML5 CSS3 PHP JS",
 	"descrip": "descripcion segundo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
@@ -18,20 +20,39 @@
 	"img": "work3.jpg",
 	"link": "#",
 	"port-logo": "",
+	"skill": "HTML5 CSS3",
 	"descrip": "descripcion tercero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
 	"title": "project4",
 	"img": "work4.jpg",
 	"link": "#",
-	"port-logo": "", 
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS AJAX",
 	"descrip": "descripcion cuartLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
 	"title": "project5",
 	"img": "work5.jpg",
 	"link": "#",
-	"port-logo": "", 
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS",
+	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "project5",
+	"img": "work5.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS",
+	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "project5",
+	"img": "work5.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS",
 	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   { 
@@ -39,6 +60,7 @@
 	"img": "work6.jpg",
 	"link": "#",
 	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS",
 	"descrip": "descripcion sexto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   }
 ]

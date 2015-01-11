@@ -99,6 +99,7 @@ p{
   text-align: right;
   padding-right: 60px;
   border-right: 3px solid @shadow;
+
 }
 
 #sidebar, #sidebar a {
@@ -186,7 +187,6 @@ p{
 
   #sidebar-footer ul li a i {
     padding: 6px;
-    background-color: rgba(0, 0, 0, 0.33);
     border-radius: 100%;
 
     -webkit-transition: all 0.3s ease;
@@ -313,9 +313,15 @@ small.text-muted {
   z-index: 1000;
   margin: 10px;
   right: 1px;
-  top: -60px;
+  /*top: -60px;*/
+  /*
   transition: all 0.3s cubic-bezier(0,-0.13,1,-0.23);
   -webkit-transition: all 0.3s cubic-bezier(0,-0.13,1,-0.23);
+  */
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transform: scale(0); 
+    transform: scale(0);
    a{
     color: white;
    }
@@ -331,11 +337,13 @@ small.text-muted {
   -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
+
 }
 
 .box-portfolio:hover .lp{
   top: 5px;
-  
+  -webkit-transform: scale(1); 
+    transform: scale(1);
 }
 
 .box-descrip{
@@ -462,6 +470,66 @@ small.text-muted {
   -webkit-transition: all .2s ease;
   box-shadow: -1px 3px 5px 0 rgba(50,50,50,.32);
 }
+.fl{
+  position: relative;
+  float: right;
+}
+.lp2{
+  height: 0px;
+  z-index: 100;
+  position: relative;
+  margin-right: 50px;
+}
+
+.lp2 a i{
+  background-color: #fff;
+  padding: 13px;
+  border-radius: 100px;
+  font-size: 21px;
+  color: @blue;
+  position: relative;
+  bottom: 22px;
+  box-shadow: -1px 3px 5px 0 rgba(50,50,50,.32);
+
+  opacity: 0;
+  -webkit-transform: scale(0);
+            transform: scale(0);
+
+  -webkit-animation-name: lpanim;
+          animation-name: lpanim;
+          animation-duration:0.2s;
+          -webkit-animation-duration:0.2s;
+      animation-fill-mode:forwards;
+      -webkit-animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s; 
+}
+
+
+@-webkit-keyframes lpanim {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes boxUp {
+  0% {
+   -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /* ng-animate 
    ======================================= */
 .ng-enter, .ng-leave{position: absolute;}
@@ -469,15 +537,131 @@ small.text-muted {
 .ng-leave{ z-index: 9999; }
 
 .ng-enter{ 
-  animation: fadeInUp  0.2s linear; z-index: 8888; 
+  animation: fadeIn  0.3s linear; z-index: 8888; 
 }
 .ng-leave{ 
-  animation: zoomOut  0.5s linear; z-index: 9999;
+  animation: fadeOut  0.3s linear; z-index: 9999;
+
 }
 
 /* porfolio details 
    ======================================= */
+   .portfolio{
+    padding-bottom: 30px;
+   }
+  .wrap{
+    margin: 88px 30px 30px 30px;
 
+  }
    .portfolio-details img{
       width: 100%;
    }
+
+   .port-title{
+    background-color: @blue;
+    position: relative;
+    padding: 10px 30px;
+    color: white !important;
+   }
+
+     .port-title h3{
+      color: white;
+     }
+.port-img-view {
+  background-size: cover;
+  /*height: 300px;*/
+  overflow-x: hidden;
+  height: 1px;
+  opacity: 0;
+  width: 100%;
+
+  -webkit-animation-name: boxUp;
+  animation-name: boxUp;
+  animation-duration:0.4s;
+  -webkit-animation-duration:0.4s;
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+
+@-webkit-keyframes boxUp {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  100% {
+    opacity: 1;
+    height: 500px;
+  }
+}
+
+@keyframes boxUp {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 500px;
+  }
+}
+}
+
+
+.port-img-view img{
+  width: 100%;
+}
+
+/*=========================================*/
+     
+@media only screen and (min-width: 360px) and (max-width: 768px){
+   #sidebar .logo img{
+    width: 61px !important;
+   }
+   #sidebar a.logo{
+    float: left;
+    margin-top: 9px;
+   }
+
+   #sidebar{
+    padding-top: 5px;
+    background-color: #1e88e5;
+    overflow: hidden;
+    position: relative;
+    z-index: 10000;
+    margin-top: 1px;
+   }
+
+   nav{
+    font-size: 16px;
+   }
+
+   nav ul {
+    list-style: none;
+    padding: 0;
+   }
+   nav ul li{
+    display: inline-block;
+    margin-left: 5px;
+   }
+   #sidebar-footer{
+    display: none;
+   }
+   .port-img-view img{
+    height: 100%;
+    width: auto;
+    text-align: center;
+   }
+
+   .box{
+    background-color: white;
+   }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1190px){
+  .port-img-view img{
+    height: 100%;
+    width: auto;
+    text-align: center;
+   }
+}

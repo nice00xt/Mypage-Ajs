@@ -1,0 +1,66 @@
+[
+  {
+	"title": "Educ Admin",
+	"img": "work1.jpg",
+	"link": "http://educ-admin.com/",
+	"port-logo": "",
+	"skill": "Wordpress HTML5 CSS3 JS Wordpress - 2015",
+	"descrip": "description primero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "Women to",
+	"img": "work2.jpg",
+	"link": "http://womento.org/beta2/",
+	"port-logo": "",
+	"skill": "Wordpress HTML5 CSS3 - 2014",
+	"descrip": "descripcion segundo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+    {
+	"title": "Urban Remodeling",
+	"img": "work3.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 Wordpress - 2014",
+	"descrip": "descripcion tercero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+    {
+	"title": "Bitacora Territorio",
+	"img": "work4.jpg",
+	"link": "",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP Wordpress - 2014",
+	"descrip": "descripcion cuartLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "Smile HD",
+	"img": "work5.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS -2014",
+	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "Insas",
+	"img": "work6.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS - 2013",
+	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  {
+	"title": "Distrimed Ltda",
+	"img": "work7.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS AJAX - 2013",
+	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  },
+  { 
+	"title": "Fundacion Promagdalena", 
+	"img": "work8.jpg",
+	"link": "#",
+	"port-logo": "",
+	"skill": "HTML5 CSS3 PHP JS - 2012",
+	"descrip": "descripcion sexto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
+  }
+]

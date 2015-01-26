@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="Juan - Front End">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/global.less">
+    <link rel="stylesheet" href="styles/font-awesome.min.css" >
+    <link rel="stylesheet" href="styles/material-design-iconic-font.min.css" >
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,500,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body ng-app="apps">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+          
+            <!-- sidebar -->
+            <div class="column col-sm-4" id="sidebar">
+
+                <div class="descrip">
+                    <a class="logo" href="#">
+                      <img src="images/bg/user.png" alt="">
+                    </a>
+                        <p>Hi! I'm <span>Juan Guillermo</span> </p>
+                        <p>a Web Designer & Developer.</p>
+                </div>
+                 <nav>
+                         <ul>
+                             <li><a href="#/skills">SKILLS</a></li>
+                             <li><a href="#portfolio">PORTFOLIO</a></li>
+                         </ul> 
+                </nav>
+
+                <ul class="nav">
+                    <li class="active"><a href="#featured"></a></li>
+                </ul>
+
+                <div id="sidebar-footer">
+                    <ul>
+                        <li><a id="lin" href="https://www.linkedin.com/profile/view?id=212310303&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a id="twt" href="https://twitter.com/juan00xt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a id="gl" href=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a id="gt" href="https://github.com/nice00xt" target="_blank"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- /column -->
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column" id="main">
+                        <div class="row"> 
+
+                                
+                                <div class="page {{ pageClass }}" ng-view></div>
+
+                                <div class="col-md-12"><div class="clearfix"></div></div>
+
+                           <!-- /col-12 -->
+                        </div><!-- /row -->
+                    <!-- /col-9 -->
+            </div><!-- /main -->
+          
+        </div><!-- /row -->
+    </div><!-- /box -->
+</div><!-- /wrapper -->
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/angular-route.js"></script>
+
+    <script src="scripts/controllers/controller.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

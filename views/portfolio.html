@@ -1,0 +1,32 @@
+        <div class="wrap">
+             <div class="col-md-8">
+                                <div id="title">
+                                    <h2>My works</h2>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis debitis, eligendi quo atque esse ducimus nobis possimus illum molestias consequatur delectus voluptates, autem quos eum id est neque, sit vel.</p>
+                                </div>
+                              </div>
+             <div class="portfolio" ng-controller="PortfolioController">
+                            
+                              <div class="clearfix"></div>
+                              <hr>                
+                                <div class="col-md-6" ng-repeat="prt in portlist">
+                                    <div class="box-portfolio">
+                                            <div class="ps">
+                                                <div class="lp"><a href="#/portfolio/{{ prt.title }}"><i class="fa fa-chevron-down"></i></a></div>
+                                            </div>
+                                            <div class="box-descrip">
+                                                    <h4>{{prt.title}}</h4>
+                                                    <p>{{prt.skill}}</p>
+                                            </div>
+                                        <div class="back-sw"></div>   
+                                        <!-- <div class="port-img-back" style="background: url(../images/misc/{{prt.img}});"></div> -->                                   
+                                         <img ng-src="images/misc/{{prt.img}}" alt="">
+                                        
+                                    </div>
+
+                                </div>
+
+              </div>
+              <div class="clearfix"></div>
+               <hr> 
+         </div>       

@@ -1,0 +1,67 @@
+                        <div class="wrap">    
+                            <div class="col-md-8">
+                                <div id="title">
+                                    <h2>My skills</h2>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis debitis, eligendi quo atque esse ducimus nobis possimus illum molestias consequatur delectus voluptates, autem quos eum id est neque, sit vel.</p>
+                                </div>
+                              </div>
+
+                        <div class="skills" ng-controller="skillList">
+                            <div class="col-md-9">
+                              <div class="clearfix"></div>
+                              <hr>                        
+
+                                     <!-- skills1-->
+
+                                    <div class="pro" ng-repeat="sk in skills">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    
+                                    <!-- skills2-->
+                                    <div class="pro" ng-repeat="sk in skills2">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    
+                                    <!-- skills3-->
+                                    <div class="pro" ng-repeat="sk in skills3">
+                                        <span>{{sk.skill}}</span>
+                                        <div class="br" style="width:{{sk.perct}}%;"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    
+                                    <style>
+                                    .br {
+                                       
+                                    -webkit-animation: brs 0.8s; 
+                                    animation: brs 0.8s;
+                                    animation-fill-mode:forwards;
+                                    -webkit-animation-fill-mode: forwards;
+                                    
+                                    }
+                                    @-webkit-keyframes brs {
+                                        from {width: 100%; opacity: 0;}
+                                        to {width: {{sk.perct}}; opacity: 1;}
+                                    }
+                                    @keyframes brs {
+                                        from {width: 100%; opacity: 0}
+                                        to {width: {{sk.perct}}; opacity: 1;}
+                                    }
+                                    </style>
+                                    </div>
+                                </div><!-- end skills controller-->
+
+                                <div class="col-md-8">
+                                    <div id="title">
+                                        <h2>Content</h2>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis debitis, eligendi quo atque esse 
+                                         delectus voluptates, autem quos eum id est neque, sit velducimus nobis possimus illum molestias consequatur delectus voluptates, autem quos eum id est neque, sit vel.</p>
+                                    </div>
+                                  </div>
+                             </div>   

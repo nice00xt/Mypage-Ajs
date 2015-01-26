@@ -1,13 +1,15 @@
 /*color
    ========================================================================== */
-   @blue: #2196F3;
-   @d-blue: #1E88E5;
-   @l-blue: #90CAF9;
+   @blue: #757575;
+   @l-blue: #9E9E9E;
+   @d-blue: #616161;
    @grey: #757575;
 
    @teal: #009688;
    @l-teal: #4DB6AC;
    @shadow: rgba(0, 0, 0, 0.13);
+   @relaway: 'Relaway',arial,sans-serif;
+   @roboto: 'Roboto', sans-serif;
 
 /* ==========================================================================
 styles
@@ -24,6 +26,18 @@ styles
   font-style:normal;
 }
 
+@font-face {
+  font-family: 'Material Design Iconic Font';
+  src: url('../fonts/Material-icons/Material-Design-Iconic-Font.eot?v=1.0.1');
+  src: url('../fonts/Material-icons/Material-Design-Iconic-Font.eot?#iefix&v=1.0.1') format('embedded-opentype'), 
+       url('../fonts/Material-icons/Material-Design-Iconic-Font.woff?v=1.0.1') format('woff'), 
+       url('../fonts/Material-icons/Material-Design-Iconic-Font.ttf?v=1.0.1') format('truetype'), 
+       url('../fonts/Material-icons/Material-Design-Iconic-Font.svg?v=1.0.1#Material-Design-Iconic-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* move special fonts to HTML head for better performance */
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
 
@@ -31,7 +45,7 @@ styles
 /* custom template */
 html, body {
    height: 100%;
-   font-family:'Relaway',arial,sans-serif;
+   font-family: @roboto;
 }
 
 a {
@@ -39,7 +53,7 @@ a {
 }
 
 p{
-  font-family:'Raleway', sans-serif;
+  font-family: @roboto;
 }
 .wrapper, .row {
    height: 100%;
@@ -77,7 +91,7 @@ p{
     /*background-image:url('http://lorempixel.com/1024/760/nature/3/');
     background-size:cover;
     background-attachment:fixed;*/
-    background-color: @blue;
+    background-color: @l-blue;
 
 }
 
@@ -126,7 +140,7 @@ p{
 }
 
 .descrip p{
-  font-family: "Relaway", "Open Sans";
+  font-family: @roboto;
   font-size: 20px;
 }
 
@@ -167,7 +181,7 @@ p{
     font-size:50px;
     height:75px;
     width:75px;
-    margin-bottom:30px;
+   /* margin-bottom:30px;*/
   }
 
   #sidebar-footer{
@@ -217,7 +231,7 @@ p{
 /* bootstrap overrides */
 
 h1,h2,h3 {
-   font-family:'Raleway', sans-serif;
+   font-family: @roboto;
    color: @d-blue;
 }
 
@@ -258,7 +272,20 @@ small.text-muted {
   background: rgba(0,0,0,0.2);
   visibility: hidden;
 }
-/*skill bar
+/*nav bar
+   ======================================= */
+nav ul {
+    list-style: none;
+    padding: 0;
+    li{
+      a{
+        color: @d-blue !important;
+      }
+    }
+   }
+
+
+/*skills bar
    ======================================= */
 
 .pro{
@@ -318,8 +345,8 @@ small.text-muted {
   transition: all 0.3s cubic-bezier(0,-0.13,1,-0.23);
   -webkit-transition: all 0.3s cubic-bezier(0,-0.13,1,-0.23);
   */
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
   -webkit-transform: scale(0); 
     transform: scale(0);
    a{
@@ -331,9 +358,10 @@ small.text-muted {
   background-color: @blue;
   padding: 13px;
   border-radius: 100px;
-  font-size: 21px;
+  font-size: 16px;
   transition: all 0.2s ease;
  -webkit-transition: all 0.2s ease;
+ 
   -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
@@ -344,8 +372,12 @@ small.text-muted {
   top: 5px;
   -webkit-transform: scale(1); 
     transform: scale(1);
+    -webkit-transition-delay: 0.3s; /* Safari */
+    transition-delay: 0.3s;
 }
-
+.box-descrip h4{
+  font-weight: 100;
+}
 .box-descrip{
   position: absolute;
   color: @blue;
@@ -353,7 +385,7 @@ small.text-muted {
   padding: 0px 20px 10px;
   text-align: left;
   margin-top: 36px;
-  background-color: @d-blue;
+  background-color: @blue;
   width: 100%;
   height: 100%;
   top: 56px;
@@ -366,6 +398,11 @@ small.text-muted {
     }
     p{
       color: @grey;
+      position: relative;
+      right: -21px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
     }
 }
 
@@ -376,6 +413,10 @@ small.text-muted {
       color: @d-blue;
       background-color: transparent;
     }
+    p{
+     right: 0;
+     opacity: 1; 
+    }
 }
 
 .ps{
@@ -384,7 +425,7 @@ small.text-muted {
 }
 
 .box-portfolio img{
-  width: 900px;
+  width: 200%;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 
@@ -415,8 +456,9 @@ small.text-muted {
 
 @media (max-width: 800px) {
 #sidebar{
-  border-bottom: 3px solid @d-blue !important;
+  /*border-bottom: 3px solid @d-blue !important;*/
   border-right: 0 !important;
+  background-color: @l-blue;
  }
 }
 /* modal
@@ -478,15 +520,15 @@ small.text-muted {
   height: 0px;
   z-index: 100;
   position: relative;
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .lp2 a i{
-  background-color: #fff;
+  background-color: #4db6ac;
+  color: #fff;
   padding: 13px;
   border-radius: 100px;
-  font-size: 21px;
-  color: @blue;
+  font-size: 16px;
   position: relative;
   bottom: 22px;
   box-shadow: -1px 3px 5px 0 rgba(50,50,50,.32);
@@ -532,7 +574,12 @@ small.text-muted {
 
 /* ng-animate 
    ======================================= */
-.ng-enter, .ng-leave{position: absolute;}
+
+.ng-enter, .ng-leave{
+  position: absolute;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
 .ng-enter { z-index: 8888; }
 .ng-leave{ z-index: 9999; }
 
@@ -553,8 +600,14 @@ small.text-muted {
     margin: 88px 30px 30px 30px;
 
   }
-   .portfolio-details img{
-      width: 100%;
+   .portfolio-details{
+    background-color: #fff;
+     margin: 0 auto; 
+     max-width: 723px;
+     padding: 20px 50px 40px;
+     bottom: 45px;
+     position: relative;
+     box-shadow: -1px 3px 5px 0 rgba(50,50,50,.32);
    }
 
    .port-title{
@@ -562,11 +615,32 @@ small.text-muted {
     position: relative;
     padding: 10px 30px;
     color: white !important;
+    width: 100%;
+    z-index: 999;
    }
 
-     .port-title h3{
+     .port-title h3, .port-title a i{
       color: white;
+      font-weight: 100;
+      position: relative;
      }
+     .port-title a i{
+      margin-right: 10px
+     }
+.port-img-back{
+  
+  background-size: initial;
+  width: 100%;
+  height: 100%;
+  transisiton: all 0.3s ease;
+  -webkit-transisiton: all 0.3s ease;
+}
+.box-portfolio:hover .port-img-back{
+  transisiton: all 0.3s ease;
+  -webkit-transisiton: all 0.3s ease;
+  background-size: cover;
+}
+     
 .port-img-view {
   background-size: cover;
   /*height: 300px;*/
@@ -591,7 +665,7 @@ small.text-muted {
   }
   100% {
     opacity: 1;
-    height: 500px;
+    height: 400px;
   }
 }
 
@@ -602,7 +676,7 @@ small.text-muted {
   }
   100% {
     opacity: 1;
-    top: 500px;
+    height: 400px;
   }
 }
 }
@@ -614,7 +688,7 @@ small.text-muted {
 
 /*=========================================*/
      
-@media only screen and (min-width: 360px) and (max-width: 768px){
+@media only screen and (min-width: 320px) and (max-width: 768px){
    #sidebar .logo img{
     width: 61px !important;
    }
@@ -625,7 +699,7 @@ small.text-muted {
 
    #sidebar{
     padding-top: 5px;
-    background-color: #1e88e5;
+    background-color: @l-blue;
     overflow: hidden;
     position: relative;
     z-index: 10000;
@@ -635,15 +709,16 @@ small.text-muted {
    nav{
     font-size: 16px;
    }
-
-   nav ul {
-    list-style: none;
-    padding: 0;
-   }
+   
+   
    nav ul li{
     display: inline-block;
     margin-left: 5px;
+    a{
+      font-size: 14px;
+    }
    }
+
    #sidebar-footer{
     display: none;
    }
@@ -656,9 +731,16 @@ small.text-muted {
    .box{
     background-color: white;
    }
+   .lp2 a i{
+    position: fixed;
+   }
 }
-
-@media only screen and (min-width: 360px) and (max-width: 1190px){
+@media only screen and (min-width: 320px) and (max-width: 1400px){
+  .lp2 a i{
+    position: fixed;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 1190px){
   .port-img-view img{
     height: 100%;
     width: auto;

@@ -1,3 +1,5 @@
+/*
+
 $(document).ready(function(){
 	$('.btn-vr').click(function(){
 		$('.overlay-box').fadeIn('fast');
@@ -7,3 +9,5 @@ $(document).ready(function(){
 		$('.overlay-box').fadeOut('fast');
 	});
 });
+
+*/

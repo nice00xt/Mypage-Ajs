@@ -1,5 +1,10 @@
 
-
+<div class="port-title">
+			
+	
+<h3><a href="#portfolio"><i class="md md-arrow-back"></i></a> {{ prt.title }}</h3>
+			
+</div>
 <div class="port-img-view">
 	<img style="background-size:cover" src="images/misc/{{ prt.img }}" alt="">
 </div>
@@ -9,27 +14,14 @@
 	     <a href="{{ prt.link }}" target="_blank"><i class="fa fa-link"></i></a>
 	</div>
 </div>
-<div class="port-title">
-			<h3>{{ prt.title }}</h3> 
-</div>
 
 
-<div class="col-md-8">
+
+<div class="col-md-12">
 	<div class="portfolio-details">
-		<p>{{ prt.descrip }}</p>
-	</div>
-	<div class="foot-back">
-		<a href="#portfolio">Back</a>
-	</div>
-
+	<p>{{ prt.descrip }}</p>
+		<span>{{prt.skill}}</span>
+</div>
+	
 </div>
 
-<style>/*
-	.port-img-view{
-		 background-image:url('../images/misc/{{ prt.img }}');
-		 background-size: cover;
-
-		 transition: all 0.3s ease;
-		 -webkit-transition: all 0.3s ease;
-	}*/
-</style>

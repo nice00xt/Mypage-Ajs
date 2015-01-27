@@ -5,12 +5,12 @@
     <title></title>
     <meta name="description" content="Juan - Front End">
     <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="styles/animate.css" />
 
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/global.less">
     <link rel="stylesheet" href="styles/font-awesome.min.css" >
     <link rel="stylesheet" href="styles/material-design-iconic-font.min.css" >
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,300,700' rel='stylesheet' type='text/css'>
@@ -62,11 +62,7 @@
             <!-- main -->
             <div class="column" id="main">
                         <div class="row"> 
-
-                                
                                 <div class="page {{ pageClass }}" ng-view></div>
-
-                                <div class="col-md-12"><div class="clearfix"></div></div>
 
                            <!-- /col-12 -->
                         </div><!-- /row -->
@@ -85,5 +81,6 @@
 
     <script src="scripts/controllers/controller.js"></script>
     <script src="scripts/main.js"></script>
+
 </body>
 </html>

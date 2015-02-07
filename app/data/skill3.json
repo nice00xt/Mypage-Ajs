@@ -3,13 +3,13 @@
               "perct": "30" 
               },
             { "skill": "Bower", 
-              "perct": "40" 
+              "perct": "65" 
               },
             { "skill": "GruntJS", 
-              "perct": "50" 
+              "perct": "65" 
               },
             { "skill": "GitHub", 
-              "perct": "50" 
+              "perct": "60" 
           }
 
 

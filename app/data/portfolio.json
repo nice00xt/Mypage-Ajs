@@ -1,5 +1,6 @@
 [
   {
+  	"id": "educ-admin",
 	"title": "Educ Admin",
 	"img": "work1.jpg",
 	"link": "http://educ-admin.com/",
@@ -8,6 +9,7 @@
 	"descrip": "description primero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
+  	"id": "women-to",
 	"title": "Women to",
 	"img": "work2.jpg",
 	"link": "http://womento.org/beta2/",
@@ -16,6 +18,7 @@
 	"descrip": "descripcion segundo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
+    "id": "urban-remodeling",
 	"title": "Urban Remodeling",
 	"img": "work3.jpg",
 	"link": "#",
@@ -24,6 +27,7 @@
 	"descrip": "descripcion tercero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
     {
+    "id": "bitacora-territotio",
 	"title": "Bitacora Territorio",
 	"img": "work4.jpg",
 	"link": "",
@@ -32,6 +36,7 @@
 	"descrip": "descripcion cuartLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
+  	"id": "smile-hd-app",
 	"title": "Smile HD",
 	"img": "work5.jpg",
 	"link": "#",
@@ -40,6 +45,7 @@
 	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
+  	"id": "insas",
 	"title": "Insas",
 	"img": "work6.jpg",
 	"link": "#",
@@ -48,6 +54,7 @@
 	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   {
+  	"id": "distrimed-ltda",
 	"title": "Distrimed Ltda",
 	"img": "work7.jpg",
 	"link": "#",
@@ -56,6 +63,7 @@
 	"descrip": "descripcion quinto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earu"
   },
   { 
+  	"id": "fundacion-promagdalena",
 	"title": "Fundacion Promagdalena", 
 	"img": "work8.jpg",
 	"link": "#",

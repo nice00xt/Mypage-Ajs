@@ -517,10 +517,12 @@ nav ul {
   }
     .ng-enter {
       animation: fadeIn  0.3s linear;
+      -webkit-animation: fadeIn  0.3s linear;
       z-index: 8888;
     }
     .ng-leave {
       animation: fadeOut  0.3s linear;
+      -webkit-animation: fadeOut  0.3s linear;
       z-index: 9999;
     }
 
@@ -530,8 +532,12 @@ nav ul {
   padding-bottom: 30px;
 }
 .wrap {
-  margin: 88px 30px 30px 30px;
+  margin: 75px 30px 30px 30px;
 }
+.portfolio-details span{
+  color: #999;
+}
+
 .portfolio-details {
   background-color: #fff;
   margin: 0 auto;
@@ -539,6 +545,7 @@ nav ul {
   padding: 20px 50px 40px;
   bottom: -16px;
   position: relative;
+  font-size: 17px;
   box-shadow: -1px 3px 5px 0 rgba(50, 50, 50, .32);
 
   -webkit-animation-name: port;
@@ -588,7 +595,9 @@ nav ul {
 
   }
 }
-
+.port-det-img{
+  margin: 20px 0;
+}
 .port-title {
   position: relative;
   padding: 10px 30px;

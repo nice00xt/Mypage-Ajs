@@ -166,7 +166,6 @@ p {
 #sidebar-footer ul li a i {
   padding: 6px;
   border-radius: 100%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #sidebar-footer ul li a:hover i {
@@ -275,8 +274,6 @@ nav ul li a {
   margin-bottom: 3px;
   overflow: hidden;
   position: relative;
-  -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
-  -moz-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
 }
 .lp {
@@ -307,15 +304,12 @@ nav ul li a {
   font-size: 16px;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
-  -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
-  -moz-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
   box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.32);
 }
 .box-portfolio:hover .lp {
   top: 5px;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition-delay: 0.3s;
   /* Safari */
 
   transition-delay: 0.3s;
@@ -512,13 +506,13 @@ nav ul li a {
   z-index: 9999;
 }
 .ng-enter {
-  animation: fadeIn  0.3s linear;
   -webkit-animation: fadeIn  0.3s linear;
+  animation: fadeIn  0.3s linear;
   z-index: 8888;
 }
 .ng-leave {
-  animation: fadeOut  0.3s linear;
   -webkit-animation: fadeOut  0.3s linear;
+  animation: fadeOut  0.3s linear;
   z-index: 9999;
 }
 /* porfolio details
@@ -535,7 +529,7 @@ nav ul li a {
 .portfolio-details {
   background-color: #fff;
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 723px;
   padding: 20px 50px 40px;
   bottom: -16px;
   position: relative;

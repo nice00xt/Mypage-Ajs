@@ -67,13 +67,13 @@ AppStart.config(['$routeProvider', function($routeProvider) {
 
 //route
         AppStart.controller('PortfolioDetails', function ($scope, $routeParams, $http){
-        $scope.id = $routeParams.details;
+        $scope.title = $routeParams.details;
 
 
        $http.get('data/portfolio.json').success(function(data) {
 
        $scope.prt = data.filter(function(entry){
-            return entry.id === $scope.id;
+            return entry.title === $scope.title;
           })[0];
         });
       });

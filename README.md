@@ -1,4 +1,4 @@
-page app--v1
+angular-proyect-v1
 ==================
 
 owner page

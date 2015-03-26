@@ -1,0 +1,16 @@
+ [
+            { "skill": "Less",
+              "perct": "30" 
+              },
+            { "skill": "Bower", 
+              "perct": "65" 
+              },
+            { "skill": "GruntJS", 
+              "perct": "65" 
+              },
+            { "skill": "GitHub", 
+              "perct": "60" 
+          }
+
+
+] 

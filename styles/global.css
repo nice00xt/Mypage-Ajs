@@ -232,8 +232,15 @@ nav ul {
   list-style: none;
   padding: 0;
 }
+nav ul li {
+  margin-bottom: 5px;
+}
 nav ul li a {
   color: #fff !important;
+}
+nav ul li a i {
+  font-size: 20px;
+  margin-left: 5px;
 }
 /* skills bar
 ======================================= */
@@ -527,7 +534,7 @@ nav ul li a {
   padding-bottom: 30px;
 }
 .wrap {
-  margin: 75px 30px 30px 30px;
+  margin: 60px 30px 30px 30px;
 }
 .portfolio-details span {
   color: #999;
@@ -611,6 +618,19 @@ nav ul li a {
   transisiton: all 0.3s ease;
   -webkit-transisiton: all 0.3s ease;
   background-size: cover;
+}
+.t1 {
+  background: url('../images/misc/workspace.jpg');
+  height: 400px !important;
+  background-size: cover ;
+}
+.t2 {
+  background: url('../images/misc/skillimg.png');
+  background-size: cover ;
+  height: 153px;
+}
+.bt {
+  width: 100%;
 }
 .port-img-view {
   background-size: cover;

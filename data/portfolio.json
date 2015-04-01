@@ -41,7 +41,7 @@
 	"img": "work6.jpg",
 	"link": "http://insas.com.co",
 	"portlogo": "insas1.jpg",
-	"skill": "Web-dev & dsng: HTML5 CSS3 PHP JS - 2013",
+	"skill": "Front End dev & dsng: HTML5 CSS3 PHP JS - 2013",
 	"descrip": "Sitio web para una constructora sonde puede mostrar sus servicios y el portafolio de trabajo de la empresa uno de mis primeros trabajos."
   },
   {
@@ -50,7 +50,7 @@
 	"img": "work9.jpg",
 	"link": "https://github.com/nice00xt/morphing-device",
 	"portlogo": "morp.jpg",
-	"skill": "Web-dev & dsng: HTML5 CSS3 JS- 2013",
+	"skill": "Front End dev & dsng: HTML5 CSS3 JS- 2013",
 	"descrip": "Demostración en la que se muestra cómo se puede dibujar con CSS3 y controlar el valor de las propiedades CSS desde Javascript, creando una magnifica animación demostrando que se puede hacer buenas animaciones aún, sin Flash."
   },
   {
@@ -59,7 +59,7 @@
 	"img": "work7.jpg",
 	"link": "http://distrimedltda.com",
 	"portlogo": "distri.jpg",
-	"skill": "Web-dev: HTML5 CSS3 JS PHP SQL- 2013",
+	"skill": "Front End dev: HTML5 CSS3 JS PHP SQL- 2013",
 	"descrip": "Una empresa en la cual vende y distribuye medicamentos en la ciudad de Santa Marta con puntos comerciales en todos los municipios del departamento del magdalena, decidí hacer un sitio donde se mostrara las principales características de la empresa. por lo cual contiene una pequeña tienda en la que pueden mostrar sus productos y  la oportunidad de que los usuarios puedan compartirlos en redes sociales. La tienda es administrable y fue hecha totalmente en PHP y Mysql."
   },
   { 
@@ -68,7 +68,7 @@
 	"img": "work8.jpg",
 	"link": "http://fundacionpromagdalenaips.com",
 	"portlogo": "funpro.jpg",
-	"skill": "Web-dev & desgn: HTML5 CSS3 JS PHP  - 2012",
+	"skill": "Front End dev & desgn: HTML5 CSS3 JS PHP  - 2012",
 	"descrip": "Sitio web para la Eps en Santa marta, el sitio brinda información para los usuarios que deseen conocer la empresa y sus servicios. Cuenta también con un formulario para solicitud de citas hecho con PHP. Este sitio fue uno de mis primeros trabajos en el cual el encargado del diseño y el desarrollo fui solo yo."
   }
 ]

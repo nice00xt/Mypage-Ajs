@@ -17,6 +17,9 @@
             { "skill": "Angular JS", 
               "perct": "60" 
               },
+            { "skill": "Ruby on rails", 
+              "perct": "60" 
+              },
             { "skill": "MySQL", 
               "perct": "40" 
               },

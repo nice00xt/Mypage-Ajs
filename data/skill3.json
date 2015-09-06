@@ -2,15 +2,22 @@
             { "skill": "Less",
               "perct": "30" 
               },
+            { "skill": "Sass",
+              "perct": "30" 
+              },
+            { "skill": "Coffe Script", 
+              "perct": "40" 
+              },
             { "skill": "Bower", 
               "perct": "65" 
+              },
+            { "skill": "BEM", 
+              "perct": "40" 
               },
             { "skill": "GruntJS", 
               "perct": "65" 
               },
-            { "skill": "GitHub", 
+            { "skill": "Git", 
               "perct": "60" 
-          }
-
-
+           }
 ] 

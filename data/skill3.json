@@ -2,6 +2,12 @@
             { "skill": "Less",
               "perct": "30" 
               },
+            { "skill": "Sass",
+              "perct": "30" 
+              },
+            { "skill": "Coffee Script",
+              "perct": "40" 
+              },
             { "skill": "Bower", 
               "perct": "65" 
               },

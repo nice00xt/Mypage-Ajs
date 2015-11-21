@@ -9,6 +9,9 @@
             { "skill": "SEO", 
               "perct": "40" 
               },
+              { "skill": "Unit Test", 
+              "perct": "40" 
+              },
             { "skill": "User Experience", 
               "perct": "30" 
           }
